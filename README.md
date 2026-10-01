@@ -267,3 +267,43 @@ El proyecto demuestra la integración de distintos paradigmas de programación:
 - **MIPS:** programación de bajo nivel.
 
 Además, muestra cómo distintos lenguajes pueden colaborar mediante contratos de datos definidos entre etapas.
+
+## Preguntas de reflexion tecnica
+
+1. ¿Por qué Java resulta adecuado para la etapa de análisis y modelado de instrucciones?
+
+Porque con Java se puede trabajar ordenado gracias a su modelo orientado a objetos.
+Es ideal para revisar que las reglas de sintaxis se cumplan, detectar errores indicando
+el numero de linea exacto y organizar las instrucciones en estructuras claras antes de continuar.
+
+2. ¿Qué cambia conceptualmente entre describir una transformación con estilo imperativo y funcional?
+
+Imperativo: Le indicas a la computadora paso a paso como modificar los datos usando variables
+mutables, ciclos for o while e indices manuales.
+
+Funcional: Le indicas a la computadora que resultado quieres aplicando funciones de
+transformacion directa (filter, map, reduce), sin modificar la lista original y evitando efectos secundarios.
+
+3. ¿Qué información se pierde o se conserva al convertir programa.mini a programa.ir?
+
+Lo que se conserva: El contenido esencial para la ejecucion lo que seeria la lista
+inicial de datos, la secuencia de operaciones con sus operadores.
+
+Lo que se pierde: Los detalles visuales y contextuales que no afectan el resultado
+espacios en blanco adicionales, saltos de linea y referencias a numeros de linea del codigo original.
+
+4. ¿Por qué la representación intermedia puede compararse con una fase de un compilador?
+
+Porque actua como un puente intermedio, separa la fase de validar sintaxis y detectar errores
+de la fase de ejecucion de transformaciones. Esto permite cambiar de lenguaje en el futuro sin
+reescribir todo el sistema.
+
+5. ¿Qué ventajas y costos aparecen al integrar tres lenguajes en lugar de resolver todo con uno?
+
+Entre las ventajas esta el que se puede provechar lo mejor de cada paradigma Java para validacion
+y modelado estructurado, Python para procesamiento funcional conciso de listas, y MIPS para control
+directo de registros y calculo numerico a bajo nivel.
+
+Entre los costos esta que hay mayor complejidad al coordinar diferentes entornos de ejecucion
+y una penalizacion en el rendimiento debido a la lectura y escritura constante de archivos en
+disco para intercambiar informacion.
