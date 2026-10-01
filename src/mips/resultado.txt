@@ -1,0 +1,8 @@
+FILTER > 5 => [10, 15, 20]
+MAP * 2 => [20, 30, 40]
+FILTER <= 30 => [20, 30]
+MAP + 5 => [25, 35]
+REDUCE SUM => 60
+RESULT=60
+OPS=5
+MIPS|60|5
